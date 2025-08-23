@@ -32,74 +32,84 @@
 
       <nav class="nav">
         <div class="wrapper">
+          <!-- Mobile Navbar -->
           <section class="nav__mobile">
-            <a href="#hero"
-              ><img class="nav__img" src="./assets/images/logo2.png" alt="logo"
-            /></a>
+            <a href="#hero">
+              <img
+                class="nav__img"
+                src="./assets/images/logo2.png"
+                alt="logo"
+              />
+            </a>
             <aside class="nav__hamburger">
               <i class="nav__hamburger-icon fa-solid fa-bars"></i>
               <i class="nav__hamburger-close fa-solid fa-xmark"></i>
             </aside>
           </section>
 
+          <!-- Desktop Navbar -->
           <section class="nav__desktop">
+            <!-- Logo -->
             <aside>
-              <a href="#hero"
-                ><img
-                  class="nav__img link hidden fromTop"
+              <a href="#hero">
+                <img
+                  class="nav__img link"
                   src="./assets/images/logo2.png"
                   alt="logo"
-              /></a>
+                />
+              </a>
             </aside>
+
+            <!-- Links -->
             <section class="nav__desktop-links">
-              <a
-                class="desktop-hero active-link link hidden fromTop"
-                href="#hero"
-                ><i class="fa-solid fa-house"></i> Home</a
-              >
-              <a class="desktop-projects link hidden fromTop" href="#projects"
-                ><i class="fa-solid fa-diagram-project"></i> Projects</a
-              >
-              <a class="desktop-skills link hidden fromTop" href="#skills"
-                ><i class="fa-solid fa-code"></i> Skills</a
-              >
+              <a class="desktop-hero active-link link" href="#hero">
+                <i class="fa-solid fa-house"></i> Home
+              </a>
+              <a class="desktop-projects link" href="#projects">
+                <i class="fa-solid fa-diagram-project"></i> Projects
+              </a>
+              <a class="desktop-skills link" href="#skills">
+                <i class="fa-solid fa-code"></i> Skills
+              </a>
             </section>
+
+            <!-- Socials -->
             <article class="nav__desktop-socials">
               <a
-                class="link hidden fromTop"
-                href="https://se.linkedin.com/in/renas-hassan-9b248b186"
+                href="https://linkedin.com"
                 target="_blank"
                 aria-label="LinkedIn"
                 title="LinkedIn"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
               <a
-                class="link hidden fromTop"
-                href="https://www.facebook.com/Renash97"
+                href="https://facebook.com"
                 target="_blank"
                 aria-label="Facebook"
                 title="Facebook"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
               <a
-                class="link hidden fromTop"
-                href="https://github.com/meganide"
+                href="https://github.com"
                 target="_blank"
                 aria-label="Github"
                 title="Github"
-                ><i class="fa-brands fa-github"></i
-              ></a>
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
             </article>
+
+            <!-- Resume Button -->
             <a
-              class="link hidden fromTop"
               href="./assets/cv.pdf"
-              area-label="Resume"
+              aria-label="Resume"
               title="Resume"
               target="_blank"
-              ><button class="button button--secondary link hidden fromTop">
-                Resume
-              </button></a
             >
+              <button class="button-resume">Resume</button>
+            </a>
           </section>
         </div>
       </nav>
@@ -169,12 +179,9 @@
           <div class="hero-container" id="hero">
             <div class="wrapper">
               <section class="hero">
+                <!-- Left Content -->
                 <section class="hero__left">
-                  <section
-                    class="hero__heading-background prevent-select link hidden fromTop"
-                  >
-                    <h1 class="hero__heading">Hi, I'm Mukesh Ram!</h1>
-                  </section>
+                  <h1 class="hero__heading">Hi, I'm <span>Mukesh Ram</span></h1>
 
                   <div id="typed-strings">
                     <p>
@@ -190,24 +197,23 @@
                     </p>
                     <p>Your <span class="hero__next">Next</span> Colleague</p>
                   </div>
-                  <div
-                    class="typed-container prevent-select link hidden fromTop"
-                  >
+                  <div class="typed-container">
                     <span id="typed"></span>
                   </div>
 
-                  <p class="hero__paragraph link hidden fromTop">
+                  <p class="hero__paragraph">
                     A full stack web developer who is passionate about creating
                     beautiful, functional and responsive websites.
                   </p>
 
                   <a href="#contact" class="hero__contact-btn">
-                    <button class="button hero__button link hidden fromTop">
-                      Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                    <button class="button hero__button">
+                      Let’s Connect <i class="fa-solid fa-arrow-right"></i>
                     </button>
                   </a>
                 </section>
 
+                <!-- Right Illustration -->
                 <article class="hero__right">
                   <img
                     class="hero__astronaut illustration"
